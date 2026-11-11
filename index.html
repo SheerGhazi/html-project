@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Online Store</title>
+    <link rel="stylesheet" href="./project1.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>My Online Store</h1>
+        <p>Welcome to our online shopping store</p>
+        <h3>Cart: <span id="cart-count">0</span></h3>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="./product-category.html">Categories</a>
+        <a href="./product-detail.html">Product Details</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <h2>Our Products</h2>
+
+    <div class="products" id="products">
+
+        <div class="product" id="headphones">
+            <img src="https://placehold.co/300x200?text=Headphones" alt="Headphones">
+            <h3>Wireless Headphones</h3>
+            <p>High quality wireless headphones.</p>
+            <h4>Rs. 3500</h4>
+            <a class="details-link" href="./product-detail.html">View details</a>
+            <button onclick="addToCart('Wireless Headphones', 3500)">Buy Now</button>
+        </div>
+
+        <div class="product" id="smart-watch">
+            <img src="https://placehold.co/300x200?text=Watch" alt="Watch">
+            <h3>Smart Watch</h3>
+            <p>Modern smartwatch with amazing features.</p>
+            <h4>Rs. 5000</h4>
+            <button onclick="addToCart('Smart Watch', 5000)">Buy Now</button>
+        </div>
+
+        <div class="product" id="sports-shoes">
+            <img src="https://placehold.co/300x200?text=Shoes" alt="Shoes">
+            <h3>Sports Shoes</h3>
+            <p>Comfortable shoes for everyday use.</p>
+            <h4>Rs. 4000</h4>
+            <button onclick="addToCart('Sports Shoes', 4000)">Buy Now</button>
+        </div>
+
+        <div class="product" id="backpack">
+            <img src="https://placehold.co/300x200?text=Backpack" alt="Backpack">
+            <h3>School Backpack</h3>
+            <p>Stylish and spacious backpack.</p>
+            <h4>Rs. 2000</h4>
+            <button onclick="addToCart('School Backpack', 2000)">Buy Now</button>
+        </div>
+
+    </div>
+
+    <h2>Shopping Cart</h2>
+
+    <div id="cart-items">
+        <p>Your cart is empty.</p>
+    </div>
+
+    <h2 id="total">Total: Rs. 0</h2>
+
+    <footer>
+        <p>Copyright 2026 My Online Store. All Rights Reserved.</p>
+    </footer>
+
+    <script src="./project1.js"></script>
+
+</body>
+</html>
